@@ -1,0 +1,12 @@
+title: Suui
+email: suui.gd@gmail.com
+description: My awesome site.
+
+environment: production
+
+markdown: kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - docker-compose.yml
