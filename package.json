@@ -1,0 +1,14 @@
+{
+    "name": "suui-website",
+    "author": "Suui",
+    "description": "Personal website",
+    "_aerobatic": {
+        "build": {
+            "engine": "jekyll"
+        }
+    },
+    "dependencies": {
+        "bootstrap": "^3.3.7",
+        "eslint": "^3.11.1"
+    }
+}
