@@ -8,6 +8,7 @@ permalink: /blog/:title
 markdown: kramdown
 
 exclude:
+  - "/vendor/"
   - Gemfile
   - Gemfile.lock
   - docker-compose.yml
