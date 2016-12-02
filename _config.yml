@@ -3,6 +3,7 @@ email: suui.gd@gmail.com
 description: My awesome site.
 
 environment: production
+permalink: /blog/:title
 
 markdown: kramdown
 
