@@ -7,6 +7,7 @@
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    z-index: 0;
 }
 
 #home-wrapper:before {
@@ -14,10 +15,9 @@
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 3s;
-    animation-delay: 1s;
+    animation-delay: 0.25s;
     animation-fill-mode: forwards;
 
-    display: block;
     content: '';
     background: rgba(17, 17, 17, 1);
     opacity: 1;
@@ -26,7 +26,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: -1;
 }
 
 @keyframes backgroundOpacity {
@@ -36,12 +36,163 @@
 }
 
 #home-wrapper:after {
-    display: block;
     content: '';
-    background: radial-gradient(rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.9));
+    background: radial-gradient(rgba(17, 17, 17, 0.75), rgba(17, 17, 17, 0.9));
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: -2;
+}
+
+#about {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    color: #eee;
+    text-align: center;
+}
+
+#about .underline {
+    content: '';
+    background: #eee;
+    height: 2px;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#about .photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 2px solid #eee;
+    margin-bottom: 8px;
+}
+
+#about .nickname {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.28em;
+}
+
+#about .realname {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    margin-bottom: 5px;
+}
+
+#about .description {
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    width: 75%;
+    max-width: 450px;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+#about .links a {
+    text-decoration: none;
+    color: #eee;
+}
+
+#about .links a:hover {
+    text-decoration: none;
+}
+
+#about .links a:active {
+    text-decoration: none;
+}
+
+#about .links a:focus {
+    text-decoration: none;
+}
+
+#about .custom-button {
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: 4px;
+    width: 200px;
+}
+
+#about .links .custom-button:hover {
+    background: rgba(238, 238, 238, 0.1);
+}
+
+#about .links .custom-button:active {
+    background: rgba(238, 238, 238, 0.2);
+}
+
+#about .container {
+    animation-name: aboutContainer;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+
+    transform: scale(0);
+    opacity: 0;
+}
+
+@keyframes aboutContainer {
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#about .top-line {
+    animation-name: topLine;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+
+    position: absolute;
+    top: 40px;
+    right: 0;
+
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #eee;
+}
+
+@keyframes topLine {
+    100% {
+        width: 100%;
+    }
+}
+
+#about .bottom-line {
+    animation-name: bottomLine;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #eee;
+}
+
+@keyframes bottomLine {
+    100% {
+        width: 100%;
+    }
 }
