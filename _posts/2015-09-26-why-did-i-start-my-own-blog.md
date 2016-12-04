@@ -1,5 +1,6 @@
 ---
 layout: default
+title: "Why did I start my own blog"
 ---
 
 Hello!

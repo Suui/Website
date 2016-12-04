@@ -4,7 +4,7 @@ permalink: /blog/
 ---
 
 <div id="blog-wrapper">
-    <section id="sidebar">
+    <section id="sidebar" class="col-lg-2">
         <div class="sidebar-container">
             <div class="photo">
                 <img class="avatar" src="/img/suui.jpg">
@@ -16,7 +16,15 @@ permalink: /blog/
         </div>
     </section>
 
-    <section id="blog-posts">
-
+    <section id="blog-posts" class="col-lg-10">
+        {% for post in site.posts %}
+            <div class="row">
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                <p>{{ post.date | date: "%d/%m/%Y" }}</p>
+                <p>
+                    {{ post.content | strip_html | truncatewords: 50 }}
+                </p>
+            </div>
+        {% endfor %}
     </section>
 </div>

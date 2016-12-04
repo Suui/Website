@@ -32,11 +32,7 @@
     animation-fill-mode: forwards;
 
     transform: translateX(-300px);
-    position: fixed;
-    width: 300px;
     height: 100vh;
-    top: 0;
-    left: 0;
     border-right: 2px solid #eee;
     color: #eee;
 }
@@ -87,4 +83,15 @@
     text-align: justify;
     margin: 0 auto;
     padding: 20px 0;
+}
+
+#blog-posts {
+    padding: 50px 50px 0 50px;
+    height: 100vh;
+    color: #ddd;
+}
+
+#blog-posts .posts-wrapper {
+    width: 100%;
+    
 }
