@@ -14,7 +14,7 @@
     animation-name: backgroundOpacity;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-delay: 0.25s;
     animation-fill-mode: forwards;
 
@@ -61,14 +61,6 @@
     width: 80%;
     max-width: 500px;
     margin: 0 auto;
-}
-
-#about .photo img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    border: 2px solid #eee;
-    margin-bottom: 8px;
 }
 
 #about .nickname {
@@ -118,7 +110,7 @@
     font-size: 14px;
     padding: 12px;
     border: 2px solid #eee;
-    border-radius: 4px;
+    border-radius: 2px;
     width: 200px;
 }
 
