@@ -1,0 +1,21 @@
+---
+layout: blog
+permalink: /blog/
+---
+
+<section id="post-previews">
+    {% for post in site.posts %}
+        <div class="preview">
+            <div class="title">
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </div>
+            <div class="date">
+                {{ post.date | date: "%Y-%m-%d" }}
+            </div>
+            <p>
+                {{ post.content | strip_html | truncatewords: 50 }}
+            </p>
+            <hr>
+        </div>
+    {% endfor %}
+</section>

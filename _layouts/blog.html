@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include default-head.html %}
+
+        <link rel="stylesheet" href="/css/blog.css">
+
+        <title>
+            {% if page.title %}
+                {{ page.title }}
+            {% else %}
+                Suui's blog
+            {% endif %}
+        </title>
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+            <div class="opacity-layer">
+                {% include header.html %}
+
+                <div class="container">
+                    <div class="content">
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

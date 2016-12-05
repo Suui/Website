@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog
 title: "Why did I start my own blog"
 ---
 

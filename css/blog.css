@@ -1,22 +1,4 @@
-#blog-wrapper {
-    position: relative;
-    top: 0;
-    left: 0;
-    background-image: url("../img/shirakawago.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-}
-
-#opacity-layer {
-    position: relative;
-    top: 0;
-    left: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.96));
-    background-attachment: fixed;
-}
-
-#blog-posts {
+.content {
     animation-name: visualizePosts;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
@@ -28,11 +10,14 @@
     opacity: 0;
 
     padding: 20px 0 30px 0;
-    color: #d0d0d0;
+    margin: 0 auto;
+    max-width: 900px;
+
+    text-align: justify;
     font-size: 1.1em;
     letter-spacing: 0.05em;
-    text-align: justify;
     line-height: 1.65;
+    color: #d0d0d0;
 }
 
 @keyframes visualizePosts {
@@ -42,38 +27,35 @@
     }
 }
 
-#blog-posts .post-preview {
+#post-previews .preview {
     padding-top: 30px;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
 }
 
-#blog-posts .post-title {
+#post-previews .title {
     text-align: left;
     padding-bottom: 5px;
 }
 
-#blog-posts .post-title a {
+#post-previews .title a {
     color: #cc0000;
     font-size: 1.32em;
     font-weight: 600;
 }
 
-#blog-posts .post-title a:visited {
+#post-previews .title a:visited {
     text-decoration: none;
 }
 
-#blog-posts .post-title a:focus {
+#post-previews .title a:focus {
     text-decoration: none;
 }
 
-#blog-posts .post-title a:hover {
+#post-previews .title a:hover {
     text-decoration: none;
     color: #ff0000;
     letter-spacing: 0.055em;
 }
 
-#blog-posts .post-date {
+#post-previews .date {
     padding-bottom: 15px;
 }
