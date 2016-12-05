@@ -3,7 +3,7 @@ layout: default
 title: "Thoughts on CAS2015"
 ---
 
-<p>Recently I took a trip to Madrid in order to attend the <u><a href="http://cas2015.agile-spain.org/cas-2015-2/">CAS (Conferencia Agile Spain) 2015</a></u>, celebrated the days 3 and 4 of December. I went hoping for it to be an inflexion point in my career, and it was, but not just because of the event itself.</p>
+<p>Recently I took a trip to Madrid in order to attend the <u><a href="http://cas2015.agile-spain.org/cas-2015-2/">CAS (Conferencia Agile Spain) 2015</a></u>, celebrated the days 3 and 4 of December. I went hoping for it to be an inflection point in my career, and it was, but not just because of the event itself.</p>
 <p><strong> </strong></p>
 <p><strong>CAS 2015</strong></p>
 <p>The event is supposed to focus on Agile, in a general way. Tracks were divided into 5 sections: Developing People, Improving Software, Creating Teams, Delivering Product and Transforming Organizations. My main complaint about the event was its low emphasis on Improving Software. However, I believe this is because of my actual position.</p>
