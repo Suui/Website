@@ -44,21 +44,15 @@
     }
 }
 
-#sidebar .sidebar-container {
-    text-align: center;
-}
-
 #sidebar .photo {
-    margin: 20px 0;
+    display: inline-block;
+    padding: 20px;
 }
 
-#sidebar .underline {
-    content: '';
-    background: #eee;
-    height: 2px;
-    width: 80%;
-    max-width: 500px;
-    margin: 10px auto;
+#sidebar .names {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
 }
 
 #sidebar .nickname {
@@ -87,8 +81,7 @@
 }
 
 #blog-posts {
-    padding-top: 50px;
-    height: 100vh;
+    padding: 50px 0;
     color: #d0d0d0;
     font-size: 1.1em;
     letter-spacing: 0.05em;
@@ -104,6 +97,7 @@
 }
 
 #blog-posts .post-title {
+    text-align: left;
     padding-bottom: 5px;
 }
 

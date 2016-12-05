@@ -21,20 +21,22 @@ permalink: /blog/
         </div>
     </section>
 
-    <section id="blog-posts" class="col-lg-10">
-        {% for post in site.posts %}
-            <div class="post-preview">
-                <div class="post-title">
-                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    <section id="blog-posts">
+        <div class="container">
+            {% for post in site.posts %}
+                <div class="post-preview">
+                    <div class="post-title">
+                        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </div>
+                    <div class="post-date">
+                        {{ post.date | date: "%Y-%m-%d" }}
+                    </div>
+                    <p>
+                        {{ post.content | strip_html | truncatewords: 50 }}
+                    </p>
+                    <hr>
                 </div>
-                <div class="post-date">
-                    {{ post.date | date: "%Y-%m-%d" }}
-                </div>
-                <p>
-                    {{ post.content | strip_html | truncatewords: 50 }}
-                </p>
-                <hr>
-            </div>
-        {% endfor %}
+            {% endfor %}
+        </div>
     </section>
 </div>
