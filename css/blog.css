@@ -16,7 +16,7 @@
     background-attachment: fixed;
 }
 
-#sidebar {
+header {
     animation-name: slideIn;
     animation-iteration-count: 1;
     animation-timing-function: ease;
@@ -24,7 +24,7 @@
     animation-delay: 0.25s;
     animation-fill-mode: forwards;
 
-    transform: translateY(-300px);
+    transform: translateY(-200px);
     border-bottom: 2px solid #eee;
     color: #eee;
     text-align: center;
@@ -36,18 +36,18 @@
     }
 }
 
-#sidebar .photo {
+header .photo {
     display: inline-block;
     padding: 20px;
 }
 
-#sidebar .names {
+header .names {
     display: inline-block;
     text-align: left;
     vertical-align: middle;
 }
 
-#sidebar .nickname {
+header .nickname {
     margin-top: 5px;
     text-transform: uppercase;
     font-size: 32px;
@@ -55,14 +55,14 @@
     letter-spacing: 0.28em;
 }
 
-#sidebar .realname {
+header .realname {
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 0.2em;
     margin-bottom: 5px;
 }
 
-#sidebar .description {
+header .description {
     font-size: 14px;
     letter-spacing: 0.15em;
     width: 75%;
@@ -73,12 +73,29 @@
 }
 
 #blog-posts {
-    padding: 50px 0;
+    animation-name: visualizePosts;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.6s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+
+    transform: scale(0.99);
+    opacity: 0;
+
+    padding: 20px 0 30px 0;
     color: #d0d0d0;
     font-size: 1.1em;
     letter-spacing: 0.05em;
     text-align: justify;
     line-height: 1.65;
+}
+
+@keyframes visualizePosts {
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 #blog-posts .post-preview {
