@@ -55,12 +55,22 @@
 }
 
 #about .underline {
-    content: '';
     background: #eee;
     height: 2px;
     width: 80%;
     max-width: 500px;
     margin: 0 auto;
+}
+
+#about .photo {
+    display: inline-block;
+    margin: 20px 20px 20px 0;
+}
+
+#about .names {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
 }
 
 #about .nickname {

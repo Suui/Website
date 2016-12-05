@@ -12,64 +12,8 @@
     position: relative;
     top: 0;
     left: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.98));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.96));
     background-attachment: fixed;
-}
-
-header {
-    animation-name: slideIn;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-duration: 0.6s;
-    animation-delay: 0.25s;
-    animation-fill-mode: forwards;
-
-    transform: translateY(-200px);
-    border-bottom: 2px solid #eee;
-    color: #eee;
-    text-align: center;
-}
-
-@keyframes slideIn {
-    100% {
-        transform: translateY(0);
-    }
-}
-
-header .photo {
-    display: inline-block;
-    padding: 20px;
-}
-
-header .names {
-    display: inline-block;
-    text-align: left;
-    vertical-align: middle;
-}
-
-header .nickname {
-    margin-top: 5px;
-    text-transform: uppercase;
-    font-size: 32px;
-    font-weight: 600;
-    letter-spacing: 0.28em;
-}
-
-header .realname {
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 0.2em;
-    margin-bottom: 5px;
-}
-
-header .description {
-    font-size: 14px;
-    letter-spacing: 0.15em;
-    width: 75%;
-    max-width: 450px;
-    text-align: justify;
-    margin: 0 auto;
-    padding: 20px 0;
 }
 
 #blog-posts {
@@ -113,6 +57,7 @@ header .description {
 #blog-posts .post-title a {
     color: #cc0000;
     font-size: 1.32em;
+    font-weight: 600;
 }
 
 #blog-posts .post-title a:visited {
