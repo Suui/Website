@@ -7,7 +7,6 @@
         
         <link rel="stylesheet" href="/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/global.css">
-        <link rel="stylesheet" href="/css/home.css">
         <link rel="stylesheet" href="/css/blog.css">
         
         <script src="/js/jquery.min.js"></script>
@@ -16,7 +15,29 @@
 
     <body>
 
-        {{ content }}
+        <div id="blog-wrapper">
+            <div id="opacity-layer">
+                <header>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="photo">
+                                    <img class="avatar" src="/img/suui.jpg">
+                                </div>
+
+                                <div class="names">
+                                    <div class="nickname">Suui</div>
+                                    <div class="realname">Daniel Ojeda Loisel</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                {{ content }}
+
+            </div>
+        </div>
         
     </body>
 </html>

@@ -3,42 +3,21 @@ layout: default
 permalink: /blog/
 ---
 
-<div id="blog-wrapper">
-    <div id="opacity-layer">
-        <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="photo">
-                            <img class="avatar" src="/img/suui.jpg">
-                        </div>
-
-                        <div class="names">
-                            <div class="nickname">Suui</div>
-                            <div class="realname">Daniel Ojeda Loisel</div>
-                        </div>
-                    </div>
+<section id="blog-posts">
+    <div class="container">
+        {% for post in site.posts %}
+            <div class="post-preview">
+                <div class="post-title">
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </div>
+                <div class="post-date">
+                    {{ post.date | date: "%Y-%m-%d" }}
+                </div>
+                <p>
+                    {{ post.content | strip_html | truncatewords: 50 }}
+                </p>
+                <hr>
             </div>
-        </header>
-
-        <section id="blog-posts">
-            <div class="container">
-                {% for post in site.posts %}
-                    <div class="post-preview">
-                        <div class="post-title">
-                            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                        </div>
-                        <div class="post-date">
-                            {{ post.date | date: "%Y-%m-%d" }}
-                        </div>
-                        <p>
-                            {{ post.content | strip_html | truncatewords: 50 }}
-                        </p>
-                        <hr>
-                    </div>
-                {% endfor %}
-            </div>
-        </section>
+        {% endfor %}
     </div>
-</div>
+</section>
