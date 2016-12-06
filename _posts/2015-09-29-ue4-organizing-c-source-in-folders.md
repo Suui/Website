@@ -9,14 +9,14 @@ The engine's source and your games' source are spread across multiple locations.
 
 So, I tested out the effects of different ways to add / remove / rename and relocate folders and files in UE4, with the 4.7.6 version, and I'll leave here the procedures to accomplish those tasks as researched by myself. I would ***greatly appreciate any feedback on this***, there may be easier ways to get things done that I'm totally unaware off.
 
-#### Creating a Folder
+### Creating a Folder
 * Should **always** be done through the Add Code to Project.
 * This will generate a Folder in the OS and an equally named Filter in VS.
 * You may find the folder name in the **UnrealHeaderTool.manifest** of your project, somewhere in the end (if it contains an inherited UE4 class).
 * For the Content Browser to show the folder, it **must** inherit from a UE4 class (in other words, not inheriting from None).
 * Not inheriting from a UE4 class is OK with folders, the only thing is it won't show in your Content Browser, but it's there.
 
-#### Renaming a Folder
+### Renaming a Folder
 * Renaming the filter in VS has **no** effect whatsoever.
 * You **can't** rename it in the Content Browser.
 * Your only way is to rename it in the OS.
@@ -27,16 +27,16 @@ So, I tested out the effects of different ways to add / remove / rename and relo
 * **Create** a new filter, named as the folder, and Add Existing Item to it, selecting the C++ files in the renamed folder.
 * Everything should be correct, Intellisense working fine, files opened in VS fine, changes seen in the OS and the Content Browser.
 
-#### Deleting a Folder
+### Deleting a Folder
 * Delete the Folder in the OS and the corresponding filter in VS.
 * Recompile in UE4. Beware of the possible compilation errors if you had dependencies.
 * When it compiles, you may still see the classes in the Content Browser.
 * Reload your project in UE4 and it should fix it.
 
-#### Creating a Class
+### Creating a Class
 * I always do it through the Add Code to Project, but the main reason for it has to do with the folder creation. I guess that creating classes with a template is perfectly fine.
 
-#### Renaming a Class
+### Renaming a Class
 * This usually causes a problem with the Blueprints that derived from that class.
 * You can prevent this, by opening every derived Blueprint **before** renaming the class and file.
 * After renaming, compile from the editor, **don’t' close** the derived Blueprints!
@@ -59,14 +59,14 @@ So, I tested out the effects of different ways to add / remove / rename and relo
 * Now that you've done that you can delete what you wrote in **DefaultEngine.ini** if you wish to.
 * I guess deleting those lines is better than leaving them there, I'm not 100% sure but I haven't had any problems doing so.
 
-#### Deleting a C++ file
+### Deleting a C++ file
 * Removing it in VS will have no effects in the OS nor in UE4.
 * You can't delete it in the Content Browser.
 * The only way is to delete it in the OS and then remove it in VS.
 * Recompile! If you had dependencies, it won't compile. Fix the errors until it compiles just fine.
 * You may still find the class in the Content Browser. Reload the project and it should be gone.
 
-#### Moving files between Folders
+### Moving files between Folders
 * Moving them in VS, has again no effect.
 * As the Content Browser won't let you, you can only move them in the OS.
 * After moving them, recompile in UE4. Compilation errors may raise if you had dependencies.
