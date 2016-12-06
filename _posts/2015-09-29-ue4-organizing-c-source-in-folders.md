@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: "[UE4] Organizing C++ Source in Folders"
 ---
 

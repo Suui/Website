@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: "Take an apprentice… No matter your level!"
 ---
 

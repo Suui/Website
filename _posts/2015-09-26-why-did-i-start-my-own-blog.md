@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: "Why did I start my own blog"
 ---
 

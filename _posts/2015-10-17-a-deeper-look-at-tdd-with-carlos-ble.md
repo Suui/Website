@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: "A deeper look at TDD with Carlos Blé"
 ---
 

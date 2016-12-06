@@ -37,7 +37,7 @@
 }
 
 #post-previews .title a {
-    color: #cc0000;
+    color: #e60000;
     font-size: 1.32em;
     font-weight: 600;
 }
@@ -52,10 +52,71 @@
 
 #post-previews .title a:hover {
     text-decoration: none;
-    color: #ff0000;
-    letter-spacing: 0.055em;
+    color: #bb0000;
 }
 
 #post-previews .date {
     padding-bottom: 15px;
+}
+
+.full-post .title {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #e60000;
+}
+
+.full-post .date-and-author {
+    text-align: center;
+}
+
+.full-post .underline {
+    margin: 10px auto;
+    height: 2px;
+    background: #eee;
+    width: 50%;
+}
+
+.full-post h1, h2, h3 {
+    margin: 0;
+    padding: 40px 0 10px 0;
+    font-weight: 600;
+    border-bottom: 1px solid;
+    color: #e60000;
+}
+
+.full-post h4, h5 {
+    margin: 0;
+    padding-top: 40px;
+    font-weight: 600;
+    color: #e60000;
+}
+
+.full-post p {
+    margin: 0;
+    padding-top: 20px;
+}
+
+.full-post ul {
+    margin: 0;
+    padding-top: 20px;
+}
+
+.full-post a {
+    color: #ff00ff;
+    font-weight: 600;
+}
+
+.full-post a:visited {
+    text-decoration: none;
+}
+
+.full-post a:focus {
+    text-decoration: none;
+}
+
+.full-post a:hover {
+    text-decoration: none;
+    color: #cc00ff;
 }

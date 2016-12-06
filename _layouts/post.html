@@ -1,0 +1,11 @@
+---
+layout: blog
+---
+
+<section class="full-post">
+    <div class="title">{{ page.title }}</div>
+    <div class="date-and-author">Published by {{page.author}} the {{ page.date | date: "%d %B %Y" }}</div>
+    <div class="underline"></div>
+    
+    {{ content }}
+</section>
