@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        {% include default-head.html %}
-
-        <link rel="stylesheet" href="/css/blog.css">
-
         <title>
             {% if page.title %}
                 {{ page.title }}
@@ -12,6 +8,10 @@
                 Suui's blog
             {% endif %}
         </title>
+        
+        <link rel="stylesheet" href="/css/blog.css">
+
+        {% include default-head.html %}
     </head>
 
     <body>
