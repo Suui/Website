@@ -7,7 +7,7 @@ author: Suui
 ### Introduction
 What would be a simple way to explain Extreme Programming, Agile Software Development and Software Craftsmanship concepts to someone who’s hearing those for the first time? What does each one represent? What are they here for?
 
-Over the last half a year I’ve become conscious of the importance to have an understanding of their origins, their relation and their purpose. Everyone agrees on the high level, but when it comes to the details there is often some debate.\\
+Over the last half year I’ve become conscious of the importance to have an understanding of their origins, their relation and their purpose. Everyone agrees on the high level, but when it comes to the details there is often some debate.\\
 I’ll try and explain the basics of each as I see them.
 
 ### Origins
