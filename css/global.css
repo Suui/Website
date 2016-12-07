@@ -65,6 +65,25 @@ header .description {
     border: 2px solid #eee;
 }
 
+.custom-button {
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: 2px;
+    width: 200px;
+}
+
+.custom-button:hover {
+    background: rgba(238, 238, 238, 0.1);
+}
+
+.custom-button:active {
+    background: rgba(238, 238, 238, 0.2);
+}
+
+
 @media only screen and (max-width: 768px) {
 
     .avatar {

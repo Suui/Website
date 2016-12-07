@@ -138,3 +138,32 @@
     text-decoration: none;
     color: #cc00ff;
 }
+
+.back-to-blog {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.back-to-blog a {
+    text-decoration: none;
+    color: #eee;
+}
+
+.back-to-blog a:hover {
+    text-decoration: none;
+    color: #eee;
+}
+
+.back-to-blog a:active {
+    text-decoration: none;
+    color: #eee;
+}
+
+.back-to-blog a:focus {
+    text-decoration: none;
+    color: #eee;
+}
+
+#disqus_thread {
+    padding-top: 40px;
+}
