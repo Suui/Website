@@ -58,6 +58,21 @@ header .description {
     padding: 20px 0;
 }
 
+header .underline {
+    height: 2px;
+    background: #eee;
+}
+
+header .social-links {
+    padding-top: 8px;
+}
+
+header .social-links i {
+    margin-right: 20px;
+    font-size: 24px;
+    color: #eee;
+}
+
 .avatar {
     width: 120px;
     height: 120px;
@@ -87,9 +102,9 @@ header .description {
 @media only screen and (max-width: 768px) {
 
     .avatar {
-        width: 80px;
-        height: 80px;
-        border-radius: 40px;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
         border: 2px solid #eee;
     }
 
@@ -108,3 +123,15 @@ header .description {
         margin-bottom: 5px;
     }
 }
+
+@media only screen and (max-width: 328px) {
+
+    .avatar {
+        display: none;
+    }
+
+    header .names {
+        padding: 10px 0;
+    }
+}
+
