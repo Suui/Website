@@ -67,10 +67,18 @@ header .social-links {
     padding-top: 8px;
 }
 
-header .social-links i {
+header .social-links a {
     margin-right: 20px;
+}
+
+header .social-links i {
     font-size: 24px;
     color: #eee;
+}
+
+header .social-links i:hover {
+    transition: color 0.5s ease;
+    color: #e60000;
 }
 
 .avatar {
