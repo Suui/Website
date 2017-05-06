@@ -3,7 +3,7 @@ email: suui.gd@gmail.com
 description: My awesome site.
 
 environment: production
-url: https://suui-gd.com
+url: http://suui-gd.com
 permalink: /blog/:title
 
 markdown: kramdown
